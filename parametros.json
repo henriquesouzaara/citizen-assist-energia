@@ -1,0 +1,80 @@
+{
+  "consulta": "16/11/2026",
+  "tarifa_kwh": {
+    "valor": 0.78938,
+    "unidade": "R$/kWh (sem impostos)",
+    "tipo": "dado oficial",
+    "origem": "Enel SP, tarifa residencial B1 (TUSD 472,42 + TE 316,96 R$/MWh), Resolução Homologatória ANEEL nº 3.596/2026, vigente de 04/07/2026 a 03/07/2027",
+    "premissa": "A conta real tem impostos e bandeira tarifária, então o custo efetivo por kWh é maior. O usuário pode informar a tarifa da própria conta."
+  },
+  "potencia_chuveiro_w": {
+    "valor": 5500,
+    "unidade": "W",
+    "tipo": "estimativa",
+    "origem": "Simulação da Cemig para família de quatro pessoas com chuveiro de 5.500 W (divulgada pela Agência Minas)",
+    "premissa": "A potência varia por modelo e posição (verão/inverno). O usuário pode informar a potência do chuveiro dele (está na etiqueta)."
+  },
+  "pessoas": {
+    "valor": 4,
+    "unidade": "pessoas",
+    "tipo": "estimativa",
+    "origem": "Cenário-base da análise (família de 4 pessoas)",
+    "premissa": "1 banho por pessoa por dia, 30 dias por mês."
+  },
+  "minutos_banho": {
+    "valor": 10,
+    "unidade": "min por banho",
+    "tipo": "estimativa",
+    "origem": "Premissa do cenário-base, no mesmo patamar do estudo ANTAC (banho de 10 minutos)",
+    "premissa": "O tempo real de banho varia muito entre famílias."
+  },
+  "minutos_banho_curto": {
+    "valor": 7,
+    "unidade": "min por banho",
+    "tipo": "estimativa",
+    "origem": "Meta de hábito adotada neste trabalho (3 minutos a menos que o cenário-base)",
+    "premissa": "Depende de mudança de comportamento da família."
+  },
+  "banhos_por_pessoa_dia": {
+    "valor": 1,
+    "unidade": "banhos/dia",
+    "tipo": "estimativa",
+    "origem": "Premissa do cenário-base",
+    "premissa": "Algumas pessoas tomam mais de um banho por dia."
+  },
+  "dias_mes": {
+    "valor": 30,
+    "unidade": "dias",
+    "tipo": "premissa",
+    "origem": "Mês de referência comum às alternativas",
+    "premissa": "Todas as alternativas são comparadas no mesmo período (1 mês)."
+  },
+  "fracao_solar": {
+    "valor": 0.70,
+    "unidade": "fração (0 a 1)",
+    "tipo": "estimativa",
+    "origem": "Estudo publicado na revista Ambiente Construído (UFRGS): aquecedor solar com apoio elétrico reduziu em média 70% o consumo elétrico para aquecer água",
+    "premissa": "Resultado médio de um estudo. Depende de clima, instalação e uso do apoio elétrico."
+  },
+  "custo_aquecedor_solar_min": {
+    "valor": 7000,
+    "unidade": "R$",
+    "tipo": "estimativa",
+    "origem": "Monitor do Mercado (2026): sistema completo para 3 ou 4 moradores entre R$ 7 mil e R$ 20 mil",
+    "premissa": "Fonte jornalística. Peça orçamentos reais antes de decidir."
+  },
+  "custo_aquecedor_solar_max": {
+    "valor": 20000,
+    "unidade": "R$",
+    "tipo": "estimativa",
+    "origem": "Monitor do Mercado (2026): sistema completo para 3 ou 4 moradores entre R$ 7 mil e R$ 20 mil",
+    "premissa": "Fonte jornalística. Peça orçamentos reais antes de decidir."
+  },
+  "fator_emissao_kg_kwh": {
+    "valor": 0.0385,
+    "unidade": "kg CO2/kWh",
+    "tipo": "dado oficial citado em fonte secundária",
+    "origem": "MCTI (SIRENE): fator médio do Sistema Interligado Nacional, média anual de 2023 (0,0385 tCO2/MWh)",
+    "premissa": "O fator muda a cada ano. Confira o valor mais recente no SIRENE."
+  }
+}
